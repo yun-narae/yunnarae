@@ -38,6 +38,10 @@ main .search_content img:hover {
   opacity: 50%;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
 main .search_content input {
   padding: 10px 16px;
   font-size: 1rem;
@@ -74,6 +78,7 @@ main .search_content .list {
 
 main .search_content .list ul {
   gap: 8px;
+  text-align: left;
 }
 
 main .search_content .list li {
@@ -81,6 +86,7 @@ main .search_content .list li {
   font-size: 0.8rem;
   font-weight: 300;
   padding: 6px 0;
+  
 }
 
 main .search_content .list .tt {
@@ -103,7 +109,7 @@ main .search_content .list01 .seawrapper {
 }
 
 .slick-track {
-  display: flex !important;
+  display: flex;
   justify-content: space-between !important;
 }
 
@@ -298,10 +304,10 @@ main .search_content .list03 .num {
   text-decoration: underline;
 }
 
-#nav_content .title {
+#nav_content .mtitle {
   font-size: 1.2rem;
   font-weight: 700;
-  padding: 20px 0px;
+  padding: 30px 0px;
   display: block;
   width: 100%;
   cursor: pointer;
@@ -309,8 +315,12 @@ main .search_content .list03 .num {
   border-bottom: 1px solid #dadbdc;
   text-transform: uppercase;
   z-index: 10; /* z-index가 없으면 터치가 잘안됨 ::before때문인듯 */
-}   #nav_content .title:hover {
+} #nav_content .mtitle:hover {
   border-bottom: 1px solid #121212;
+}
+
+#nav_content .nav_sub {
+  margin-bottom: 40px;
 }
 
 #nav_content .nav_sub .cs label::after {
@@ -326,10 +336,6 @@ main .search_content .list03 .num {
   transition: all 0.2s ease-in;
 }
 
-#nav_content .nav_sub section {
-  margin-bottom: 20px;
-}
-
 #nav_content .nav_sub section ul {
   max-height: 0px;
   opacity: 0;
@@ -342,6 +348,10 @@ main .search_content .list03 .num {
   cursor: pointer;
 }   #nav_content .nav_sub section ul li:hover {
   border-bottom: 1px solid #ababab;
+}
+
+#nav_content .nav_sub section ul li a{
+  font-weight: 600;
 }
 
 #nav_content .nav_sub li {
@@ -432,27 +442,15 @@ main .search_content .list03 .num {
   display: none;
 }
 
-#nav_content .inner>:nth-child(4) {
+#nav_content .inner .navconbtn {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 60px;
+  gap: 8px;
   /* 안먹히다가 #nav_content .inner에서 height: 100%; 빼니까 됨 */
 }
-
-#nav_content .inner>:nth-child(4) button {
-  width: 49%;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-#nav_content .inner>:nth-child(4) button:nth-child(1) {
-  background: #131313;
-  color: #fff;
-  border: 0px;
-}
-
-#nav_content .inner>:nth-child(4) button:hover {
-  opacity: 60%;
+#nav_content .inner .navconbtn button {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1366px) {
@@ -504,11 +502,11 @@ main .search_content .list03 .num {
     font-weight: 1.4rem;
     padding: 10px 16px;
   }
-  
+
   main .search_content .list .tt {
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   main .search_content .list03 li {
@@ -516,17 +514,20 @@ main .search_content .list03 .num {
   }
 
   main .search_content .list03 .tt {
-    float: left;
     margin-right: 20px;
   }
 
-  main . .list03 .tt_sub {
+  main .search_content .list03 .tt_sub {
     font-size: 1rem;
   }
 
   main .search_content .list03 .num {
     font-size: 1.5rem;
     margin-right: 20px;
+  }
+
+  #nav_content {
+    padding: 0px;
   }
   
   #nav_content .nav_close {
@@ -562,7 +563,18 @@ main .search_content .list03 .num {
     max-width: 640px;
   }
 
-  #nav_content>:nth-child(1) .profile {
+  #nav_content .bannerslide {
+    width: 100%;
+    height: 100vh;
+  } 
+
+  #nav_content .bannerslide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  } 
+
+  #nav_content .profile {
     display: none;
   }
 
@@ -570,14 +582,14 @@ main .search_content .list03 .num {
     margin: 0;
   }
 
-  #nav_content .title {
+  #nav_content .mtitle {
     font-size: 1.8rem;
     line-height: 2rem;
     margin-bottom: 0;
     padding: 50px 0;
   }
 
-  #nav_content .title::after {
+  #nav_content .mtitle::after {
     display: none;
   }
 
@@ -602,14 +614,15 @@ main .search_content .list03 .num {
   #nav_content .nav_sub section ul li {      
     padding: 20px 40px 0 0;
     border-bottom: 0px;
+    border: 0px;
   }
 
-  #nav_content .nav_sub .tt {
+  #nav_content .nav_sub section ul li {
     font-size: 1.4rem;
     line-height: 2rem;
   }
 
-  #nav_content .inner>:nth-child(4) {
+  #nav_content .inner .navconbtn {
     display: none;
   }
 }

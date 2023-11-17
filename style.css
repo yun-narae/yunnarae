@@ -75,20 +75,49 @@
     text-decoration: none;  
    }
   
-  button {
-    font-size: 0.7rem;
+   button {
+    font-size: 0.8rem;
+    font-weight: 600;
     padding: 10px 30px;
-    border: 1px solid #ccc;
-    cursor: pointer;
     transition: 0.3s;
+    border-radius: 100px;
+    border: 0px;
     white-space: nowrap;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  button:hover {
-    background: rgba(0, 0, 0, 0.05);
+  .btn1 {
+    color: #121212;
+    background: #fff;
+    border: 1px solid #232323;
+    cursor: default;
+    width: 100%;
+  
+  } .btn1:hover {
+    background: #F5F5F5;
+    border: 1px solid #C2C2C2;
+    color: #757575;
+  }
+  
+  .btn2 {
+    width: 100%;
+    color: #fff;
+    background: #131313;
+    cursor: default;
+  } .btn2:hover {
+    background: #616161;
+  }
+  
+  .btn3 {
+    color: #919191;
+    background: none;
+    border-radius: 0px;
+    padding: 0px;
+    cursor: default;
+  } .btn3:hover {
+    color: #616161;
   }
 
   img {
@@ -299,14 +328,10 @@
   main .NavBottomBody {
     position: fixed;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 16px;
+    /* transform: translateX(-50%); */
+    transform: translate(0,0);
     z-index: 10;
-    width: 320px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   main .NavBottomBody .NavBottom {
@@ -363,9 +388,7 @@
   } main .btn_top:hover {
     background: #424242;
   }
-
   
-
   main .swiper-slide {
     width: 100%;
     height: 100vh;
@@ -383,7 +406,7 @@
     object-fit: cover;
   }
 
-  main .swiper-pagination {
+  .mainContent .swiper-pagination {
     position: absolute;
     bottom: 40px !important;
   }
@@ -462,10 +485,6 @@
     height: 30px;
     background: url("https://i.ibb.co/PMTWzLr/button-white.png") no-repeat;
   }
-
-  /* .mainContent .swiper-pagination {
-    margin-top: 40px;
-  } */
 
   .category .t-form .t-main {
     font-size: 1.4rem;
@@ -891,24 +910,6 @@
     font-size: 0.8rem;
     font-weight: 600;
     cursor: default;
-  }
-
-  #estimate .inn .btn-box .btn1 {
-    color: #121212;
-    background: #fff;
-    border: 1px solid #232323;
-  } #estimate .btn-box .btn1:hover {
-    background: #F5F5F5;
-    border: 1px solid #C2C2C2;
-    color: #757575;
-  }
-
-  #estimate .inn .btn-box .btn2 {
-    color: #fff;
-    background: #131313;
-    border: none;
-  } #estimate .btn-box .btn2:hover {
-    background: #616161;
   }
 
   /*#estimate 모델비교 */
@@ -1760,6 +1761,18 @@
       display: block;
       position: absolute;
       bottom: 0px !important;
+    }
+
+    main .NavBottomBody {
+      right: 73px;
+    }
+    
+    main .NavBottomBody .NavBottom {
+      display: none;
+    }
+  
+    main .NavBottomBody .btn_top {
+      margin: 0 0 0 auto;
     }
 
   }

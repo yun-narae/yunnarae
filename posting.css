@@ -358,21 +358,22 @@ input:hover {
 }
 
 /*  */
+
 .t-form, .faqwrapper, .ask_finishform, .ask_con, .ask_list .forminn {
   padding: 60px 16px;
-}
-
-.t-form {
-
-}
-
-.t-form.bg {
-  background: #f8f8f8;
 }
 
 .t-form>:nth-child(1), .faqwrapper, .ask_con, .ask_list .forminn {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.t-form.padd {
+  padding-top: 120px;
+}
+
+.t-form.bg {
+  background: #f8f8f8;
 }
 
 .t-form .t-main {
@@ -718,6 +719,10 @@ textarea {
   margin-bottom: 6px;
 }
 
+.ask_list {
+  margin-bottom: 120px;
+}
+
 .ask_list .title span {
   color: rgb(226, 100, 68);
   margin-left: 8px;
@@ -814,12 +819,6 @@ textarea {
   position: relative;
   height: 30px;
 }
-
-.ask_box .tit {
-
-}
-
-
 
 .ask_con .faqpopbtn {
   cursor: pointer;
@@ -938,6 +937,10 @@ textarea {
     padding: 14px 20px;
   }
 
+  .t-form.padd {
+    padding-top: 200px;
+  }
+  
   .t-form input {
     padding: 20px 30px;
   }
@@ -952,6 +955,10 @@ textarea {
     justify-content: center;
     gap: 20px;
     margin-top: 40px;
+  }
+
+  .t-form .incon button {
+    width: 300px;
   }
 
   .t-form .incon2 {

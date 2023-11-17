@@ -146,22 +146,6 @@ main .navBar {
     /* 왜 li 자체에 active주면 첫번째 li한테만 먹히는걸까 그래서 ul이 active일경우 li에 값을 변경해주었더니 됨.; */
     padding: 0 20px;
   }
-  
-  main .NavBottomBody {
-    width: 100%;
-    position: fixed;
-    /* left: 1260px; */
-    width: 1200px;
-    margin: 0 auto;
-  }
-  
-  main .NavBottomBody .NavBottom {
-    display: none;
-  }
-
-  main .NavBottomBody .btn_top {
-    margin: 0 0 0 auto;
-  }
 
   #nav_content {
     padding: 0;

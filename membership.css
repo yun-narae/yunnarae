@@ -314,12 +314,13 @@ input:hover {
 /* start */
 
 .content {
+  padding-top: 120px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .content > div {
-  padding: 40px 16px;
+  padding: 60px 16px;
   max-width: 640px;
   margin: 0 auto;
 }
@@ -533,6 +534,10 @@ input:hover {
   margin-bottom: 40px;
 }
 
+.joinwrapper {
+  margin-bottom: 120px;
+}
+
 .joinbody .joininn {
   border-bottom: 8px solid #F5F5F5;
   padding-bottom: 40px;
@@ -640,6 +645,10 @@ input:hover {
 
   input {
     padding: 20px 30px;
+  }
+
+  .content {
+    padding-top: 200px;
   }
 
   .tab {

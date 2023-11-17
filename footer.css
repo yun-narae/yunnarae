@@ -161,18 +161,18 @@ footer {
     color: #fff;
   }
   
-  footer .inner02_1 .dropdown {
+  footer .inner02_1 .ffdropdown {
     width: 100%;
     position: relative;
     max-width: 300px;
     margin: 0 0 0 20px;
   }
   
-  footer .inner02_1 .dropdown .title {
+  footer .inner02_1 .ffdropdown .setitle {
     font-weight: 500;
   }
   
-  footer .inner02_1 .dropdown .select_btn {
+  footer .inner02_1 .ffdropdown .select_btn {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
@@ -184,12 +184,12 @@ footer {
     border-radius: 8px;
     position: relative;
   }
-  footer .inner02_1 .dropdown .select_btn:hover {
+  footer .inner02_1 .ffdropdown .select_btn:hover {
     background: #1c1c1c;
     border: 1px solid #3d3d3d;
   }
   
-  footer .inner02_1 .dropdown .select_btn::after {
+  footer .inner02_1 .ffdropdown .select_btn::after {
     content: "";
     width: 14px;
     height: 14px;
@@ -203,7 +203,7 @@ footer {
     transition: all 0.3s ease-in;
   }
   
-  footer .inner02_1 .dropdown .options {
+  footer .inner02_1 .ffdropdown .options {
     padding: 4px;
     border-radius: 8px;
     background: #2c2c2c;
@@ -218,41 +218,41 @@ footer {
     display: none;
   }
 
-  footer .inner02_1 .dropdown .options::-webkit-scrollbar {
+  footer .inner02_1 .ffdropdown .options::-webkit-scrollbar {
     display: none;
   }
   
-  footer .inner02_1 .dropdown .option {
+  footer .inner02_1 .ffdropdown .option {
     cursor: pointer;
     border-radius: 8px;
   }
-  footer .inner02_1 .dropdown .option:hover {
+  footer .inner02_1 .ffdropdown .option:hover {
     background: #3d3d3d;
   }
   
-  footer .inner02_1 .dropdown .option_text {
+  footer .inner02_1 .ffdropdown .option_text {
     display: block;
     padding: 8px;
     font-size: 0.8rem;
   }
   
-  footer .inner02_1 .dropdown.active ::after {
+  footer .inner02_1 .ffdropdown.active ::after {
     transform: rotate(180deg);
     transition: all 0.3s ease-in;
     top: 32%;
   }
 
-  footer .inner02_1 .dropdown.active .select_btn {
+  footer .inner02_1 .ffdropdown.active .select_btn {
     background: #2c2c2c;
     border: 1px solid #424242;
     color: #616161;
   }
 
-  footer .inner02_1 .dropdown.active .select_btn::after {
+  footer .inner02_1 .ffdropdown.active .select_btn::after {
     opacity: 0.5;
   }
   
-  footer .inner02_1 .dropdown.active .options {
+  footer .inner02_1 .ffdropdown.active .options {
     display: block;
   }
   
@@ -379,24 +379,24 @@ footer .information {
     gap: 30px;
   }
 
-  footer .inner02_1 .dropdown {
+  footer .inner02_1 .ffdropdown {
     z-index: 1;
   }
 
-  footer .inner02_1 .dropdown .select_btn {
+  footer .inner02_1 .ffdropdown .select_btn {
     padding: 20px 50px 20px 20px;
   }
 
-  footer .inner02_1 .dropdown .title {
+  footer .inner02_1 .ffdropdown .setitle {
     font-size: 1.2rem;
   }
   
-  footer .inner02_1 .dropdown .option_text {
+  footer .inner02_1 .ffdropdown .option_text {
     font-size: 1rem;
     padding: 18px 12px;
   }
 
-  footer .inner02_1 .dropdown .options {
+  footer .inner02_1 .ffdropdown .options {
     top: 70px;
   }
 
