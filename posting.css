@@ -677,7 +677,7 @@ label {
   transform: translate(0,-50%);
   width: 20px;
   height: 20px;
-  background: url(imge/icon/chevron-down_b.png)no-repeat;
+  background: url("imge/icon/chevron-down_b.png")no-repeat;
   background-size: 14px;
   transition: all 0.3s ease-in;
 }
@@ -697,7 +697,6 @@ label {
 }
 
 .options {
-  display: none;
   position: absolute;
   top: 44px;
   width: 100%;
@@ -705,6 +704,7 @@ label {
   border-radius: 8px;
   background: #fff;
   z-index: 1;
+  display: none;
 }
 
 .options .option span {
@@ -896,11 +896,11 @@ textarea {
   border-radius: 14px;
   border: 1px solid #d8d8d8;
   margin-bottom: 30px;
+  background: #F5F5F5;
 }
 
 .newsinn .search_wrap_top>:nth-child(1) {
   padding: 10px;
-  background: #F5F5F5;
   border-radius: 14px;
   display: flex;
   justify-content: space-between;
@@ -981,15 +981,21 @@ textarea {
 
 .newsconlist .con .title {
   margin-bottom: 10px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  overflow: hidden;
 }
 
 .newsconlist .con .desc {
   text-overflow: ellipsis;
-display: -webkit-box;
--webkit-line-clamp: 2; 
--webkit-box-orient: vertical;
-word-break: break-all;
-overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  overflow: hidden;
 }
 
 .numberlist ul {
