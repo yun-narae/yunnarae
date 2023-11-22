@@ -893,16 +893,15 @@ textarea {
 
 
 .newsinn .search_wrap_top {
-  background: #F5F5F5;
   border-radius: 14px;
   border: 1px solid #d8d8d8;
-  overflow: hidden;
   margin-bottom: 30px;
 }
 
 .newsinn .search_wrap_top>:nth-child(1) {
   padding: 10px;
   background: #F5F5F5;
+  border-radius: 14px;
   display: flex;
   justify-content: space-between;
   max-width: 600px;
