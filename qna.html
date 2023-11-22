@@ -131,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn2 faqpopbtn">등록</button>
+                    <button class="btn2 qnapopbtn">등록</button>
                 </div>
             </div>
 
@@ -259,7 +259,7 @@
 
 <script>
     // qna ask open
-    var acodian = {
+    var ask_box = {
       click: function(target) {
         var $target = $(target);
         $target.on('click', function() {
@@ -278,7 +278,7 @@
         });
       }
     };
-    acodian.click('.ask_box > .ques');
+    ask_box.click('.ask_box > .ques');
 
     
     // qna select-menu
@@ -300,13 +300,13 @@
 
     // qna popup
         // open
-        let faqpopbtn = document.querySelector(".faqpopbtn");
-        faqpopbtn.addEventListener("click", function() {
+        let qnapopbtn = document.querySelector(".qnapopbtn");
+        qnapopbtn.addEventListener("click", function() {
         document.querySelector(".ask_finishform").style.display = "block";
         });
         // close
-        let faqpopbtn_close = document.querySelector(".hide");
-        faqpopbtn_close.addEventListener("click", function() {
+        let qnapopbtn_close = document.querySelector(".hide");
+        qnapopbtn_close.addEventListener("click", function() {
         document.querySelector(".ask_finishform").style.display = "none";
         });
 

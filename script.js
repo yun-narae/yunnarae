@@ -474,7 +474,7 @@ function includeHTML() {
           });
 
           // bestmore open
-            var acodian = {
+            var bestmore = {
                 click: function(target) {
                 var $target = $(target);
                 $target.on('click', function() {
@@ -493,7 +493,7 @@ function includeHTML() {
                 });
                 }
             };
-            acodian.click('.bestmorebtn');
+            bestmore.click('.bestmorebtn');
 
             // newKia swiper-slid 1366px에서는 작동X
             // event 스와이퍼가 먹히지 않아서 아래로 내렸더니 해결됐음

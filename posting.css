@@ -833,7 +833,7 @@ textarea {
   height: 30px;
 }
 
-.ask_con .faqpopbtn {
+.ask_con .qnapopbtn {
   cursor: pointer;
 }
 
@@ -1215,7 +1215,7 @@ overflow: hidden;
     margin-bottom: 40px;
   }
 
-  .ask_con .faqpopbtn {
+  .ask_con .qnapopbtn {
     cursor: default;
     width: 50%;
     margin: 0 auto;
