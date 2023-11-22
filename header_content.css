@@ -326,14 +326,14 @@ main .search_content .list03 .num {
 #nav_content .nav_sub .cs label::after {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 64%;
   right: 10px;
   transform: translate(0,-50%);
   width: 20px;
   height: 20px;
-  background: url("https://super.so/icon/dark/chevron-down.svg")no-repeat;
-  background-size: cover;
-  transition: all 0.2s ease-in;
+  background: url("imge/icon/chevron-down_b.png")no-repeat;
+  background-size: 14px;
+  transition: all 0.3s ease-in;
 }
 
 #nav_content .nav_sub section ul {
@@ -346,12 +346,17 @@ main .search_content .list03 .num {
   padding: 10px 0px;
   border-bottom: 1px solid #dcdcdc;
   cursor: pointer;
-}   #nav_content .nav_sub section ul li:hover {
+} #nav_content .nav_sub section ul li:hover {
   border-bottom: 1px solid #ababab;
 }
 
-#nav_content .nav_sub section ul li a{
+#nav_content .nav_sub section ul li:hover a {
+  color: #121212;
+}
+
+#nav_content .nav_sub section ul li a {
   font-weight: 600;
+  color: #757575;
 }
 
 #nav_content .nav_sub li {
@@ -430,10 +435,12 @@ main .search_content .list03 .num {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 36%;
+  top: 27%;
   right: 10px;
   transform: translate(0%, -40%);
-  background: url("https://super.so/icon/dark/chevron-down.svg")no-repeat;
+  background: url("imge/icon/chevron-down_b.png")no-repeat;
+  background-size: 14px;
+  transition: all 0.3s ease-in;
   transform: rotate(-90deg);
   opacity: 0%;
 }
@@ -621,6 +628,15 @@ main .search_content .list03 .num {
     font-size: 1.4rem;
     line-height: 2rem;
   }
+
+  
+#nav_content .nav_sub section ul li {
+  padding: 20px 0px;
+  border-bottom: 0px;
+  margin-right: 20px;
+}   #nav_content .nav_sub section ul li:hover {
+  border-bottom: 0px;
+}
 
   #nav_content .inner .navconbtn {
     display: none;

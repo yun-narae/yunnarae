@@ -59,7 +59,7 @@ main .navBar {
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
-  padding: 30px;
+  padding: 20px;
 }
 
 #navBar .pc-nav ul .cs {
@@ -138,21 +138,15 @@ main .navBar {
     display: flex;
   }
 
-  #navBar .pc-nav ul.active {
-    
-  }
-
   #navBar .pc-nav ul.active li {
-    /* 왜 li 자체에 active주면 첫번째 li한테만 먹히는걸까 그래서 ul이 active일경우 li에 값을 변경해주었더니 됨.; */
-    padding: 0 20px;
+    padding: 0 5px;
   }
 
   #nav_content {
     padding: 0;
     position: relative;
     height: 100vh;
-    position: fixed; /* mo에서 position: fixed; 줬는데 왜 또  줘야는거지? */
-    /* overflow-y: scroll; */
+    position: fixed;
   }
 }
 

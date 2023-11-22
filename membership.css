@@ -313,16 +313,42 @@ input:hover {
 
 /* start */
 
-.content {
-  padding-top: 120px;
-  max-width: 1200px;
-  margin: 0 auto;
+.membership {
+  padding-top: 60px;
+  max-width: 640px;
+  margin: 0 auto 120px auto;
 }
 
-.content > div {
+.loginbody, .joininn, .ofusebody, .finishinn, .removestart, .removecheck, .removesurvey {
   padding: 60px 16px;
   max-width: 640px;
   margin: 0 auto;
+}
+
+.inn {
+  margin-bottom: 20px;
+}
+
+.inn:last-child {
+  margin-bottom: 0px;
+}
+
+.inn .name {
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #232323;
+}
+
+.inn div {
+  display: grid;
+  grid-template-columns: auto 100px;
+  gap: 8px;
+}
+
+.inn .name span {
+  color: rgb(226, 100, 68);
+  margin-left: 4px;
 }
 
 .tab {
@@ -355,6 +381,26 @@ input:hover {
   color: #fff;
 }
 
+.tit {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #232323;
+}
+
+.tit.bold {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.ofmore {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #757575;
+  cursor: pointer;
+} .ofmore:hover {
+  text-decoration: underline;
+}
+
 .loginbody .con_wrapper > div {
   display: none;
 }
@@ -377,7 +423,14 @@ input:hover {
   margin-bottom: 12px;
 }
 
-.loginbody .keep_wrap {
+.inn_linebox {
+  border-radius: 14px;
+  background: #f8f8f8;
+  border: 1px solid #dadbdc;
+  padding: 20px;
+}
+
+.keep_wrap {
   display: flex;
   gap: 12px;
   margin-bottom: 20px;
@@ -395,7 +448,7 @@ input:hover {
 
 .label_box label {
   position: relative;
-  background: url("https://www.kia.com/content/dam/kwp/functional/icon_confirm_off.svg")no-repeat;
+  background: url("imge/icon/check_off.png")no-repeat;
   background-size: 20px;
   background-position: left;
   padding-left: 24px;
@@ -419,7 +472,7 @@ input:hover {
 .label_box input:checked + label::after {
   content: '';
   position: absolute;
-  background: url("https://www.kia.com/content/dam/kwp/functional/icon_check_outline_on.svg")no-repeat;
+  background: url("imge/icon/check_on.png")no-repeat;
   top: 50%;
   left: 0%;
   transform: translate(0%, -50%);
@@ -469,8 +522,8 @@ input:hover {
   margin-bottom: 0;
 }
 
-.ofusebody {
-  
+.ofusebody .ofusecon2 {
+  margin-bottom: 20px;
 }
 
 .ofusebody .ofuse {
@@ -530,12 +583,8 @@ input:hover {
   cursor: pointer;
 }
 
-.joinwrapper > div {
-  margin-bottom: 40px;
-}
-
-.joinwrapper {
-  margin-bottom: 120px;
+.joinwrapper > div:last-child {
+  margin-bottom: 0px;
 }
 
 .joinbody .joininn {
@@ -543,39 +592,16 @@ input:hover {
   padding-bottom: 40px;
 }
 
-.joinbody .title {
+.membership .title {
   font-size: 1rem;
   font-weight: 600;
+  line-height: 1.4rem;
   margin-bottom: 24px;
   padding: 14px 0px;
+}
+
+.joininn .title, .ofusebody .title {
   border-bottom: 1px solid #757575;
-}
-
-.joinbody .inn {
-  margin-bottom: 20px;
-}
-
-.joinbody .inn:last-child {
-  margin-bottom: 0px;
-}
-
-
-.joinbody .inn .name {
-  margin-bottom: 10px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #232323;
-}
-
-.joinbody .inn div {
-  display: grid;
-  grid-template-columns: auto 100px;
-  gap: 8px;
-}
-
-.joinbody .inn .name span {
-  color: rgb(226, 100, 68);
-  margin-left: 4px;
 }
 
 .joinbody .label_box {
@@ -586,31 +612,93 @@ input:hover {
   display: block;
 }
 
-
 .joinbody .label_box > div:nth-child(1) {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
 }
 
-.joinbody .label_box .tit {
-  font-size: 0.8rem;
-  font-weight: 500;
+.finishinn {
+  background: #f8f8f8;
+}
+
+.finishinn .img_box img {
+  width: 50px;
+  margin-top: 24px;
+}
+
+.finishinn .title {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #616161;
+}
+
+.finishinn .title span {
+  font-weight: 900;
   color: #232323;
 }
 
-.joinbody .label_box .tit.bold {
-  font-size: 1rem;
+.finishinn .title2 {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.finishinn .title2 span {
   font-weight: 700;
 }
 
-.joinbody .label_box .ofmore {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #757575;
+.btnbody {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.btnbody button {
   cursor: pointer;
-} .joinbody .label_box .ofmore:hover {
-  text-decoration: underline;
+}
+
+.removestart .title, .removecheck .title {
+  text-align: center;
+}
+
+.restartinn div {
+  margin-bottom: 20px;
+}
+
+.restartinn .btnbody .btn2 {
+  cursor: default;
+}
+
+.recheckinn ul {
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.recheckinn ul li {
+  margin-bottom: 10px;
+}
+
+.recheckinn ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.resurveyinn .desc {
+  margin-bottom: 0px;
+}
+
+.resurveyinn textarea {
+  width: 100%;
+  border-radius: 13px;
+  border: 1px solid #dadbdc;
+  height: 140px;
+  padding: 14px;
+}
+
+.removesurvey .title, .removesurvey .desc {
+  margin-bottom: 0px;
 }
 
 
@@ -647,8 +735,33 @@ input:hover {
     padding: 20px 30px;
   }
 
-  .content {
-    padding-top: 200px;
+  .membership {
+    padding-top: 140px;
+  }
+
+  .loginbody, .joininn, .ofusebody, .finishinn {
+    padding: 60px 0px;
+  }
+
+  .inn {
+    display: grid;
+    grid-template-columns: 120px auto;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .inn .name {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 160px;
+  }
+
+  .inn div {
+    display: grid;
+    grid-template-columns: auto 160px;
+    gap: 8px;
+    width: 100%;
+    justify-content: inherit;
   }
 
   .tab {
@@ -681,30 +794,9 @@ input:hover {
     line-height: 1.4rem;
   }
 
-  .joinbody .title {
+  .membership .title {
     font-size: 1.2rem;
     line-height: 1.8rem;
-  }
-
-  .joinbody .inn {
-    display: grid;
-    grid-template-columns: 120px auto;
-    gap: 8px;
-    width: 100%;
-  }
-
-  .joinbody .inn .name {
-    font-size: 1rem;
-    line-height: 1.4rem;
-    width: 160px;
-  }
-
-  .joinbody .inn div {
-    display: grid;
-    grid-template-columns: auto 160px;
-    gap: 8px;
-    width: 100%;
-    justify-content: inherit;
   }
 
   .loginbody .con_wrapper .swiper-slide {
@@ -751,6 +843,7 @@ input:hover {
     display: block;
     background: none;
     position: unset;
+    margin-bottom: 30px;
   }
 
   .ofusebody .ofuse .ofuseinn {
@@ -765,6 +858,34 @@ input:hover {
   .ofusebody .ofuse .ofuseinn ul {
     height: 240px;
     overflow: scroll;
+  }
+
+  .finishinn {
+    background: none;
+  }
+  
+  .finishinn .title2 {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    margin-bottom: 48px;
+  }
+  
+  .finishinn .title2 span {
+    font-weight: 700;
+  }
+  
+  .finishinn .btnbody {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .resurveyinn div {
+    display: flex;
+  }
+
+  .resurveyinn {
+    display: block;
   }
 
 }

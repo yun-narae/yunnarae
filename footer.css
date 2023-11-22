@@ -6,7 +6,7 @@ footer {
   footer>:nth-child(1) {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 16px 100px 16px;
+    padding: 60px 16px 140px 16px;
   }
   
   footer .sitemap {
@@ -194,23 +194,23 @@ footer {
     width: 14px;
     height: 14px;
     position: absolute;
-    top: 50%;
+    top: 53%;
     right: 10px;
     transform: translate(-20%, -50%);
-    background: url("https://i.ibb.co/0mmjsw4/down.png") no-repeat;
+    background: url("imge/icon/chevron-down_w.png") no-repeat;
     background-position: center center;
     background-size: contain;
     transition: all 0.3s ease-in;
   }
   
-  footer .inner02_1 .ffdropdown .options {
+  footer .inner02_1 .ffdropdown .ffoptions {
     padding: 4px;
     border-radius: 8px;
     background: #2c2c2c;
     border: 1px solid #424242;
     color: #C2C2C2;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 140px;
@@ -218,15 +218,15 @@ footer {
     display: none;
   }
 
-  footer .inner02_1 .ffdropdown .options::-webkit-scrollbar {
+  footer .inner02_1 .ffdropdown .ffoptions::-webkit-scrollbar {
     display: none;
   }
   
-  footer .inner02_1 .ffdropdown .option {
+  footer .inner02_1 .ffdropdown .foption {
     cursor: pointer;
     border-radius: 8px;
   }
-  footer .inner02_1 .ffdropdown .option:hover {
+  footer .inner02_1 .ffdropdown .foption:hover {
     background: #3d3d3d;
   }
   
@@ -235,24 +235,19 @@ footer {
     padding: 8px;
     font-size: 0.8rem;
   }
-  
-  footer .inner02_1 .ffdropdown.active ::after {
-    transform: rotate(180deg);
-    transition: all 0.3s ease-in;
-    top: 32%;
-  }
 
   footer .inner02_1 .ffdropdown.active .select_btn {
     background: #2c2c2c;
     border: 1px solid #424242;
-    color: #616161;
   }
 
   footer .inner02_1 .ffdropdown.active .select_btn::after {
-    opacity: 0.5;
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+    top: 32%;
   }
   
-  footer .inner02_1 .ffdropdown.active .options {
+  footer .inner02_1 .ffdropdown.active .ffoptions {
     display: block;
   }
   
@@ -396,7 +391,7 @@ footer .information {
     padding: 18px 12px;
   }
 
-  footer .inner02_1 .ffdropdown .options {
+  footer .inner02_1 .ffdropdown .ffoptions {
     top: 70px;
   }
 

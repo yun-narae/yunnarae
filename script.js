@@ -20,18 +20,18 @@ function includeHTML() {
             // 전기수는 여기에 왜 네비오븐을 넣지??
             //-------------------------------------
             // fooer
-          // dropdown        
+          // dropdown
           const optionMenu = document.querySelector(".ffdropdown"),
-          selectBtn = optionMenu.querySelector(".select_btn"),
-          options = optionMenu.querySelectorAll(".option"),
-          title = optionMenu.querySelector(".title");
-          selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
-          options.forEach(option => {
-          option.addEventListener("click", () => {
-              let selectedOption = option.querySelector(".option_text").innerText;
-              title.innerText = selectedOption;
-              optionMenu.classList.remove("active");
-          })
+            selectBtn = optionMenu.querySelector(".select_btn"),
+            options = optionMenu.querySelectorAll(".foption"),
+            title = optionMenu.querySelector(".setitle");
+            selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+            options.forEach(option => {
+            option.addEventListener("click", () => {
+                let selectedOption = option.querySelector(".option_text").innerText;
+                title.innerText = selectedOption;
+                optionMenu.classList.remove("active");
+            })
         });
 
         // option select 중복가능
@@ -73,9 +73,7 @@ function includeHTML() {
             allSelectBoxElements.forEach(boxElement => {
                 boxElement.classList.remove("active");
             });
-        });
-
-
+        }); 
 
             // search
               // search_open
@@ -414,7 +412,7 @@ function includeHTML() {
             subTabwrappe04.addEventListener("mousemove", dragging04);
             subTabwrappe04.addEventListener("mouseup", dragStop04);
   
-          
+
             // 할부 계산기
           const slider = document.getElementById("myRange");
           const output = document.getElementById("demo");
@@ -434,29 +432,8 @@ function includeHTML() {
   
               function btnPay() {
                   alert('서비스 준비중 입니다.');
-              }
+              };
   
-          
-          
-          // auto swiper-slid
-          const swiper02 = new Swiper(".newKiaSwiper", {
-              grabCursor: true,
-              effect: "creative",
-              speed: 900,
-              creativeEffect: {
-                  prev: {
-                  shadow: true,
-                  translate: ["-20%", 0, -1],
-                  },
-                  next: {
-                  translate: ["100%", 0, 0],
-                  },
-              },
-              autoplay: {
-                      delay: 2500,
-                      disableOnInteraction: false,
-                  },
-          });
   
           // event Swiper
           const swiper03 = new Swiper(".eventthumbsSlider", {
@@ -495,10 +472,69 @@ function includeHTML() {
                   disableOnInteraction: false,
               },
           });
-  
-  
-          
-  
+
+          // bestmore open
+            var acodian = {
+                click: function(target) {
+                var $target = $(target);
+                $target.on('click', function() {
+        
+                    if ($(this).hasClass('active')) {
+                    slideUp($target);
+                    } else {
+                    slideUp($target);
+                    $(this).addClass('active').next().slideDown();
+                    }
+        
+                    function slideUp($target) {
+                    $target.removeClass('active').next().slideUp();
+                    }
+        
+                });
+                }
+            };
+            acodian.click('.bestmorebtn');
+
+            // newKia swiper-slid 1366px에서는 작동X
+            // event 스와이퍼가 먹히지 않아서 아래로 내렸더니 해결됐음
+            var ww = $(window).width();
+            const mySwiper = undefined;
+
+            function initSwiper() {
+
+            if (ww < 1366 && mySwiper == undefined) {
+                mySwiper = new Swiper(".newKiaSwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                    simulateTouch: true,
+                    loop: true,
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    },
+                    
+                });
+            } else if (ww >= 1366 && mySwiper == undefined) {
+                mySwiper = new Swiper(".newKiaSwiper", {
+                    breakpoints: {
+                        1366: {
+                        slidesPerView: 3,//1366px 이상일 때 3개
+                        }
+                    },
+                });
+                mySwiper.destroy();
+                mySwiper = undefined;
+
+                }
+            };
+
+            initSwiper();
+
+            $(window).on('resize', function () {
+            ww = $(window).width();
+            initSwiper();
+            });
+
           
           }
         }      
