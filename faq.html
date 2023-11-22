@@ -685,7 +685,7 @@
     </div>
 
     <div w3-include-html="footer.html"></div>
-
+    
 </body>
 
 <script>
@@ -706,27 +706,27 @@
         });
     });
 
-    // faq ques open
-    var faq_box = {
-      click: function(target) {
-        var $target = $(target);
-        $target.on('click', function() {
+    // // faq ques open
+    // const faq_box = {
+    //   click: function(target) {
+    //     var $target = $(target);
+    //     $target.on('click', function() {
 
-          if ($(this).hasClass('active')) {
-            slideUp($target);
-          } else {
-            slideUp($target);
-            $(this).addClass('active').next().slideDown();
-          }
+    //       if ($(this).hasClass('active')) {
+    //         slideUp($target);
+    //       } else {
+    //         slideUp($target);
+    //         $(this).addClass('active').next().slideDown();
+    //       }
 
-          function slideUp($target) {
-            $target.removeClass('active').next().slideUp();
-          }
+    //       function slideUp($target) {
+    //         $target.removeClass('active').next().slideUp();
+    //       }
 
-        });
-      }
-    };
-    faq_box.click('.faq_box > .ques');
+    //     });
+    //   }
+    // };
+    // faq_box.click('.faq_box > .ques');
 
 
     // faq 마우스로 Draggable 
@@ -753,12 +753,16 @@
       wrapper.addEventListener("mouseup", dragStop);
 </script>
 
+
 <script>
-  includeHTML();
+    includeHTML();
 </script>
+
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="script.js"></script>
+
+
 
 
 </html>

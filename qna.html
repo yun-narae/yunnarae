@@ -258,43 +258,43 @@
 </body>
 
 <script>
-    // qna ask open
-    var ask_box = {
-      click: function(target) {
-        var $target = $(target);
-        $target.on('click', function() {
+    // // qna ask open
+    // const ask_box = {
+    //   click: function(target) {
+    //     var $target = $(target);
+    //     $target.on('click', function() {
 
-          if ($(this).hasClass('active')) {
-            slideUp($target);
-          } else {
-            slideUp($target);
-            $(this).addClass('active').next().slideDown();
-          }
+    //       if ($(this).hasClass('active')) {
+    //         slideUp($target);
+    //       } else {
+    //         slideUp($target);
+    //         $(this).addClass('active').next().slideDown();
+    //       }
 
-          function slideUp($target) {
-            $target.removeClass('active').next().slideUp();
-          }
+    //       function slideUp($target) {
+    //         $target.removeClass('active').next().slideUp();
+    //       }
 
-        });
-      }
-    };
-    ask_box.click('.ask_box > .ques');
+    //     });
+    //   }
+    // };
+    // ask_box.click('.ask_box > .ques');
 
     
     // qna select-menu
-    const optionMenus = document.querySelector(".select-menu"),
-        selectBtn = optionMenus.querySelector(".select-btn"),
-        options = optionMenus.querySelectorAll(".option"),
-        sBtn_text = optionMenus.querySelector(".sBtn-text");
+    const qnaoptionMenus = document.querySelector(".select-menu"),
+        qnaselectBtn = qnaoptionMenus.querySelector(".select-btn"),
+        qnaoptions = qnaoptionMenus.querySelectorAll(".option"),
+        qnasBtn_text = qnaoptionMenus.querySelector(".sBtn-text");
 
-        selectBtn.addEventListener("click", () => optionMenus.classList.toggle("active"));
+        qnaselectBtn.addEventListener("click", () => qnaoptionMenus.classList.toggle("active"));
 
-        options.forEach(option =>{
-        option.addEventListener("click",()=>{
-            let selectedOption = option.querySelector(".option-text").innerText;
-            sBtn_text.innerText = selectedOption;
+        qnaoptions.forEach(qnaoption =>{
+            qnaoption.addEventListener("click",()=>{
+            let selectedOption = qnaoption.querySelector(".option-text").innerText;
+            qnasBtn_text.innerText = selectedOption;
 
-            optionMenus.classList.remove("active");
+            qnaoptionMenus.classList.remove("active");
         })
     });
 
