@@ -518,7 +518,7 @@ label {
   margin-top: 20px;
 }
 
-.faq_box .ques {
+.morebtn .ques {
   color: #3d3d3d;
   font-size: 0.8rem;
   font-weight: 700;
@@ -533,7 +533,7 @@ label {
   position: relative;
 }
 
-.faq_box .ques::after {
+.morebtn .ques::after {
   content: '';
   position: absolute;
   top: 64%;
@@ -546,7 +546,7 @@ label {
   transition: all 0.3s ease-in;
 }
 
-.faq_box .ques::before {
+.morebtn .ques::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -558,17 +558,17 @@ label {
   background-size: 24px;
 }
 
-.faq_box .ques:hover,.faq_box .ques.active {
+.morebtn .ques:hover,.morebtn .ques.active {
   color: #121212;
   border-bottom: 1px solid #757575;
 }
 
-.faq_box .ques.active::after {
+.morebtn .ques.active::after {
   transform: rotate(180deg);
   top: 22%;
 }
 
-.faq_box .ans {
+.morebtn .ans {
   background: #F5F5F5;
   padding: 60px 12px 24px 12px;
   border-bottom: 1px solid #d8d8d8;
@@ -576,7 +576,7 @@ label {
   position: relative;
 }
 
-.faq_box .ans::after {
+.morebtn .ans::after {
   content: '';
   position: absolute;
   top: 14px;
@@ -588,12 +588,12 @@ label {
   background-size: 24px;
 }
 
-.faq_box .ans .tt {
+.morebtn .ans .tt {
   font-size: 0.8rem;
   line-height: 1.2rem;
 }
 
-.faq_box .ans .ttlink {
+.morebtn .ans .ttlink {
   font-size: 0.8rem;
   line-height: 1.2rem;
   font-weight: 700;
@@ -601,12 +601,12 @@ label {
   cursor: default;
 }
 
-.faq_box .ans .img_box {
+.morebtn .ans .img_box {
   margin-bottom: 12px;
   width: 140px;
 }
 
-.faq_box .ans .img_box img {
+.morebtn .ans .img_box img {
   width: 100%;
 }
 
@@ -649,6 +649,53 @@ label {
   font-size: 0.8rem;
   color: #616161;
 }
+
+
+  .morebtn {
+    padding: 12px 16px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .morebtn.active::after {
+    transform: rotate(180deg);
+    top: 7%;
+    right: 13px;
+  }
+
+  .morebtn::after {
+    content: '';
+    position: absolute;
+    top: 64%;
+    right: 10px;
+    transform: translate(0,-50%);
+    width: 20px;
+    height: 20px;
+    background: url("imge/icon/chevron-down_b.png")no-repeat;
+    background-size: 14px;
+    transition: all 0.3s ease-in;
+  }
+
+  .morecon {
+    display: none;
+  }
+
+  .morecon li {
+    padding: 14px 20px;
+    align-items: start;
+  }
+
+  .morecon li b {
+    min-width: 70px;
+  }
+
+  .morecon li p {
+    margin-bottom: 6px;
+  }
+
+  .morecon.active {
+    display: block;
+  }
 
 .menubody {
   margin-bottom: 12px;
@@ -1142,51 +1189,51 @@ textarea {
     padding: 24px 60px;
   }
 
-  .faq_box .ques, .ask_list .tit {
+  .morebtn .ques, .ask_list .tit {
     font-size: 1.2rem;
     line-height: 2rem;
   }
 
-  .faq_box .ques {
+  .morebtn .ques {
     padding: 30px 70px 30px 60px;
   }
 
-  .faq_box .ques::after, .ask_box .ques::after {
+  .morebtn .ques::after, .ask_box .ques::after {
     top: 55%;
     background-size: 20px;
   }
 
-  .faq_box .ques::before {
+  .morebtn .ques::before {
     width: 40px;
     height: 40px;
     background-size: 34px;
   }
-  .faq_box .ans {
+  .morebtn .ans {
     padding: 22px 135px 24px 60px;
   }
 
-  .faq_box .ans::after {
+  .morebtn .ans::after {
     width: 40px;
     height: 40px;
     background-size: 34px;
   }
 
-  .faq_box .ans .tt, .ask_list .ans .tt {
+  .morebtn .ans .tt, .ask_list .ans .tt {
     font-size: 1rem;
     line-height: 1.4rem;
   }
   
-  .faq_box .ans .ttlink, .ask_list .ans .ttlink {
+  .morebtn .ans .ttlink, .ask_list .ans .ttlink {
     font-size: 1rem;
     line-height: 1.4rem;
   }
 
-  .faq_box .ans .img_box {
+  .morebtn .ans .img_box {
     margin-bottom: 12px;
     width: 240px;
   }
   
-  .faq_box .ans .img_box img {
+  .morebtn .ans .img_box img {
     width: 100%;
   }
 

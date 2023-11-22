@@ -125,51 +125,51 @@ function includeHTML() {
               });
             };
 
-            // faq ques open
-            // 위치 고정
-            const faq_box = {
-                click: function(target) {
-                var $target = $(target);
-                $target.on('click', function() {
+            // // faq ques open
+            // // 위치 고정
+            // const faq_box = {
+            //     click: function(target) {
+            //     var $target = $(target);
+            //     $target.on('click', function() {
         
-                    if ($(this).hasClass('active')) {
-                    slideUp($target);
-                    } else {
-                    slideUp($target);
-                    $(this).addClass('active').next().slideDown();
-                    }
+            //         if ($(this).hasClass('active')) {
+            //         slideUp($target);
+            //         } else {
+            //         slideUp($target);
+            //         $(this).addClass('active').next().slideDown();
+            //         }
         
-                    function slideUp($target) {
-                    $target.removeClass('active').next().slideUp();
-                    }
+            //         function slideUp($target) {
+            //         $target.removeClass('active').next().slideUp();
+            //         }
         
-                });
-                }
-            };
-            faq_box.click('.faq_box > .ques');
+            //     });
+            //     }
+            // };
+            // faq_box.click('.faq_box > .ques');
 
-            // qna ask open
-            // 위치 고정
-            const ask_box = {
-                click: function(target) {
-                var $target = $(target);
-                $target.on('click', function() {
+            // // qna ask open
+            // // 위치 고정
+            // const ask_box = {
+            //     click: function(target) {
+            //     var $target = $(target);
+            //     $target.on('click', function() {
         
-                    if ($(this).hasClass('active')) {
-                    slideUp($target);
-                    } else {
-                    slideUp($target);
-                    $(this).addClass('active').next().slideDown();
-                    }
+            //         if ($(this).hasClass('active')) {
+            //         slideUp($target);
+            //         } else {
+            //         slideUp($target);
+            //         $(this).addClass('active').next().slideDown();
+            //         }
         
-                    function slideUp($target) {
-                    $target.removeClass('active').next().slideUp();
-                    }
+            //         function slideUp($target) {
+            //         $target.removeClass('active').next().slideUp();
+            //         }
         
-                });
-                }
-            };
-            ask_box.click('.ask_box > .ques');
+            //     });
+            //     }
+            // };
+            // ask_box.click('.ask_box > .ques');
 
   
             // reveal
@@ -513,10 +513,9 @@ function includeHTML() {
               },
           });
 
-              
 
-          // bestmore open
-            var bestmore = {
+          // All more open
+            var moreopen = {
                 click: function(target) {
                 var $target = $(target);
                 $target.on('click', function() {
@@ -535,9 +534,7 @@ function includeHTML() {
                 });
                 }
             };
-            bestmore.click('.bestmorebtn');
-
-            
+            moreopen.click('.morebtn');
 
 
             // newKia swiper-slid 1366px에서는 작동X

@@ -655,19 +655,19 @@
     margin-bottom: 20px;
   }
 
-  .bestmorebtn {
+  .morebtn {
     padding: 12px 16px;
     position: relative;
     cursor: pointer;
   }
 
-  .bestmorebtn.active::after {
+  .morebtn.active::after {
     transform: rotate(180deg);
     top: 7%;
     right: 13px;
   }
 
-  .bestmorebtn::after {
+  .morebtn::after {
     content: '';
     position: absolute;
     top: 64%;
@@ -680,33 +680,25 @@
     transition: all 0.3s ease-in;
   }
 
-  .bestmorecon {
+  .morecon {
     display: none;
   }
 
-  .bestmorecon li {
+  .morecon li {
     padding: 14px 20px;
     align-items: start;
   }
 
-  .bestmorecon li b {
+  .morecon li b {
     min-width: 70px;
   }
 
-  .bestmorecon li p {
+  .morecon li p {
     margin-bottom: 6px;
   }
 
-  .bestmorecon.active {
+  .morecon.active {
     display: block;
-  }
-
-  .bestmoreconshow {
-    display: block;
-  }
-
-  .bestmoreconhide {
-    display: none;
   }
 
   .bestKia .bestprice h3 {
@@ -1466,7 +1458,7 @@
       border: none;
     }
 
-    .bestmore_body .bestmorebtn {
+    .bestmore_body .morebtn {
       cursor: default;
       padding: 0px;
       margin-bottom: 14px;
@@ -1478,15 +1470,15 @@
       color: #757575;
     }
 
-    .bestmore_body .bestmorebtn::after {
+    .bestmore_body .morebtn::after {
       display: none;
     }
 
-    .bestmore_body .bestmorecon {
+    .bestmore_body .morebtn {
       display: block;
     }
 
-    .bestmore_body .bestmorecon li {
+    .bestmore_body .morebtn li {
       padding: 10px 0px;
       font-size: 1.2rem;
       line-height: 1.8rem;
