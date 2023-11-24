@@ -35,6 +35,28 @@ function includeHTML() {
             });
 
 
+            // navBar scroLL event Listener to the page
+            window.addEventListener("scroll", () => {
+            const header = document.getElementById('navBar');
+            const menutop = document.querySelector('.hea_top');
+            const offset = 50;
+            const pcnav = document.querySelector('.pc-nav ul');
+  
+                //if the page is scroLLed by 50px or more
+                if (pageYOffset > offset) {
+                    //Activate navbar
+                    header.classList.add('active');
+                    menutop.classList.add('active');
+                    pcnav.classList.add('active');
+                } else {
+                    //Deactivate navbar
+                    header.classList.remove('active');
+                    menutop.classList.remove('active');
+                    pcnav.classList.remove('active');
+                }
+            });
+
+
             // search
               // search_open
               let search_open = document.querySelector("#search_open");
@@ -122,29 +144,6 @@ function includeHTML() {
                 //     prevEl: ".swiper-button-prev",
                 // },
               });
-  
-            //Add scroLL event Listener to the page
-            const header = document.getElementById('navBar');
-            const menutop = document.querySelector('.hea_top');
-            const offset = 50;
-            const pcnav = document.querySelector('.pc-nav ul');
-            // const search = document.querySelector('.search_open');
-  
-  
-            window.addEventListener("scroll", () => {
-                //if the page is scroLLed by 50px or more
-                if (pageYOffset > offset) {
-                    //Activate navbar
-                    header.classList.add('active');
-                    menutop.classList.add('active');
-                    pcnav.classList.add('active');
-                } else {
-                    //Deactivate navbar
-                    header.classList.remove('active');
-                    menutop.classList.remove('active');
-                    pcnav.classList.remove('active');
-                }
-            });
   
 
             // swiper-slid parallax
@@ -586,3 +585,4 @@ window.addEventListener("load", function () {
     wrapper.addEventListener("mousemove", faqdragging);
     wrapper.addEventListener("mouseup", faqdragStop);
 })
+
