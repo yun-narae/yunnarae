@@ -233,8 +233,8 @@ main .search_content .list03 .num {
 }
 
 #nav_content .nav_close img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 #nav_content .nav_close:hover {
@@ -254,7 +254,10 @@ main .search_content .list03 .num {
 }
 
 #nav_content>:nth-child(1) .profile>:nth-child(1) {
+  width: 80px;
+  height: 80px;
   min-width: 80px;
+  min-height: 80px;
   border-radius: 100px;
   overflow: hidden;
 }
@@ -331,7 +334,7 @@ main .search_content .list03 .num {
   transform: translate(0,-50%);
   width: 20px;
   height: 20px;
-  background: url("imge/icon/chevron-down_b.png")no-repeat;
+  background: url("image/icon/chevron-down_b.png")no-repeat;
   background-size: 14px;
   transition: all 0.3s ease-in;
 }
@@ -343,7 +346,7 @@ main .search_content .list03 .num {
 }
 
 #nav_content .nav_sub section ul li {
-  padding: 10px 0px;
+  padding: 16px 0px;
   border-bottom: 1px solid #dcdcdc;
   cursor: pointer;
 } #nav_content .nav_sub section ul li:hover {
@@ -438,7 +441,7 @@ main .search_content .list03 .num {
   top: 27%;
   right: 10px;
   transform: translate(0%, -40%);
-  background: url("imge/icon/chevron-down_b.png")no-repeat;
+  background: url("image/icon/chevron-down_b.png")no-repeat;
   background-size: 14px;
   transition: all 0.3s ease-in;
   transform: rotate(-90deg);
@@ -593,7 +596,7 @@ main .search_content .list03 .num {
     font-size: 1.8rem;
     line-height: 2rem;
     margin-bottom: 0;
-    padding: 50px 0;
+    padding: 34px 0;
   }
 
   #nav_content .mtitle::after {
