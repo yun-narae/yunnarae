@@ -718,6 +718,7 @@ label {
   position: relative;
 }
 
+
 .ask_con .select-btn,.newsinn .select-btn {
   border-radius: 8px;
   background: #fff;
@@ -754,6 +755,8 @@ textarea {
 
 .ask_con .inn .selectbody {
   margin-bottom: 6px;
+  width: 100%;
+  max-width: 328px;
 }
 
 .ask_list {
@@ -950,7 +953,7 @@ textarea {
   background: #fff;
   position: relative;
   width: 100%;
-} .newsinn  .select:hover {
+} .ask_con .select:hover ,.newsinn  .select:hover {
   border: 1px solid #757575;
 }
 
@@ -1180,8 +1183,8 @@ textarea {
 
   .label_box label {
     background-size: 30px;
-    padding-left: 40px;
     height: 30px;
+    padding-left: 40px;
   }
 
   .label_box input:checked + label::after {
@@ -1261,9 +1264,9 @@ textarea {
   }
 
   .ask_con .inn:first-child {
-    border-right: 1px solid #dadbdc;
+    /* border-right: 1px solid #dadbdc;
     height: 90%;
-    padding-right: 40px;
+    padding-right: 40px; */
   }
 
   .ask_form .inn.message {
@@ -1304,10 +1307,10 @@ textarea {
   }
 
   .ask_con .forminn>:nth-child(1) {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: start;
+    align-items: start; */
   }
 
   .ask_finishform .forminn .desc {

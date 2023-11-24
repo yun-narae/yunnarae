@@ -219,7 +219,7 @@ img {
 }
 
 .t-form {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -663,10 +663,6 @@ input[type="checkbox"] {
 
 .col_option .label_box .inncolor .col_box.black {
   background-color: #121212;
-}
-
-.tab_option .t-form, .tab_option .opTab {
-  padding: 0px 16px 40px 16px;
 }
 
 .tab_option .opTab {
